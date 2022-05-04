@@ -33,6 +33,7 @@ const BuyModal = ({ close }) => {
 
 
   useEffect(() => {
+    console.log("calculating price")
     calculatePrice()
   }, [tokenAmount])
 
@@ -41,6 +42,7 @@ const BuyModal = ({ close }) => {
     price = price.toFixed(4)
     setAmountDue(price)
   }
+  console.log("isloading", isLoading)
 
   return (
     <div className={styles.container}>

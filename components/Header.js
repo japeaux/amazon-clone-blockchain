@@ -27,7 +27,7 @@ const Header = () => {
 
     const { openModal, isModalOpen, closeModal } = useModal()
 
-    const { balance, buyTokens, getBalance } = useContext(AmazonContext)
+    const { balance, getBalance } = useContext(AmazonContext)
 
   return (
      <div className={styles.container}>
